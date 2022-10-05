@@ -20,8 +20,17 @@ public class HomePage extends  BasePage{
 
     }
 
+    @FindBy(xpath = "//h5[.='Alerts, Frame & Windows']")
+    WebElement alertsFrameWindow;
+
+    public SidePanelPage selectAlertsFrameWindows() {
+        clickWithJSExecutor(alertsFrameWindow, 0, 300);
+        return new SidePanelPage(driver);
+    }
 }
 
 // xpath //*[text()='Book Store Application']
-//   //h5[text()='Book Store Application']
-//   //h*[.='Book Store Application']
+//  xpath //h5[text()='Book Store Application']
+//  xpath //h*[.='Book Store Application']
+
+// //div[@class='category-cards']/div[3] or //*[@class='category-cards']/*[3]

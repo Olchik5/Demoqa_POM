@@ -2,10 +2,9 @@ package com.telran.tests;
 
 import com.telran.data.BookData;
 import com.telran.data.UserData;
-import com.telran.pages.BookStorePage;
-import com.telran.pages.HomePage;
-import com.telran.pages.LoginPage;
+import com.telran.pages.*;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,8 +18,18 @@ public class AddBookTests extends TestBase{
     }
 
     @Test
-    public void searchBookTestWithRegistration(){
-        new BookStorePage(driver).typeInSearchBookInput(BookData.BOOK_NAME);
-        Assert.assertTrue(new BookStorePage(driver).takeNameOfBook().contains(BookData.BOOK_NAME));
+    public void AddBookToCollection(){
+        new BookStorePage(driver).typeInSearchBookInput(BookData.BOOK_NAME)
+                .clickOnBookTitleLink().clickOnAddBookButton().acceptAlert();
+        new SidePanelPage(driver).selectProfile();
+
+        Assert.assertTrue(new BookStorePage(driver).takeNameOfBook().contains("Git"));
+
+    }
+
+    @AfterMethod
+    public void deleteBookFromCollection() {
+        new ProfilePage(driver).deleteBook();
+
     }
 }

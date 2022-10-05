@@ -35,4 +35,24 @@ public class BookStorePage extends BasePage {
     public String takeNameOfBook() {
         return nameOfBook.getText();
     }
+
+    public BookStorePage clickOnBookTitleLink() {
+        click(nameOfBook);
+        return this;
+    }
+
+    @FindBy(xpath = "//*[text()='Add To Your Collection']")
+    WebElement addToCollectionButton;
+
+    public BookStorePage clickOnAddBookButton() {
+        clickWithJSExecutor(addToCollectionButton, 0, 300);
+        pause(500);
+        return this;
+    }
+
+
 }
+
+//xpath //*[text()='Add To Your Collection']
+
+//CSS .text-right.fullButton
