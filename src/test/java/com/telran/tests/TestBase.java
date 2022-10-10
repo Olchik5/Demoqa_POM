@@ -1,5 +1,6 @@
 package com.telran.tests;
 
+import com.telran.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
@@ -14,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    WebDriver driver;
+   public WebDriver driver;
 
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
@@ -42,6 +43,7 @@ public class TestBase {
             logger.info("PASSED: test method " + result.getMethod().getMethodName());
         } else {
             logger.info("FAILED:  test method " + result.getMethod().getMethodName());
+            new BasePage(driver).takeScreenshot();
         }
     }
 }
