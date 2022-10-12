@@ -2,6 +2,7 @@ package com.telran.pages;
 
 import com.telran.pages.alertsWindows.AlertsPage;
 import com.telran.pages.alertsWindows.BrowserWindowsPage;
+import com.telran.pages.alertsWindows.FramesPage;
 import com.telran.pages.bookstore.ProfilePage;
 import com.telran.pages.elements.ButtonsPage;
 import com.telran.pages.widgets.SelectMenuPage;
@@ -55,6 +56,15 @@ public class SidePanelPage extends BasePage {
     public SelectMenuPage getSelectMenu() {
         clickWithJSExecutor(selectMenu,0,600);
         return new SelectMenuPage(driver);
+    }
+
+
+    @FindBy (xpath = "//span[text()='Frames']")
+    WebElement frames;
+
+    public FramesPage selectFrame() {
+        clickWithJSExecutor(frames, 0, 300);
+        return new FramesPage(driver);
     }
 }
 // //*[text()='Profile']
