@@ -1,7 +1,6 @@
 package com.telran.pages.alertsWindows;
 
 import com.telran.pages.BasePage;
-import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,8 +27,13 @@ public class FramesPage extends BasePage {
 
     }
 
+    @FindBy (tagName = "body")
+    WebElement body;
+
     public FramesPage switchToFrameByIndexTest(int index) {
         driver.switchTo().frame(index);
+       // body.getText();
+        System.out.println(body.toString());
         return this;
     }
 
@@ -47,11 +51,25 @@ public class FramesPage extends BasePage {
         return this;
     }
 
-    @FindBy (id = "sampleHeading")
-    WebElement sampleHeading1;
+    @FindBy (tagName = "body")
+    WebElement body1;
 
-    public String getConfirmResult() {
-        return sampleHeading1.getText();
+    public String isTextFramePresent() {
+        driver.switchTo().frame(frame1);
+        return body1.getText();
+
     }
 
+    @FindBy (id = "frame2")
+    WebElement frame2;
+
+    public String isFramePresent() {
+        driver.switchTo().frame(frame2);
+        return body.getText();
+    }
+
+    public String isIndexOfFramePresent() {
+        driver.switchTo().frame(1);
+        return body.getText();
+    }
 }

@@ -20,18 +20,20 @@ public class FramesTests extends TestBase {
     @Test
     public void framesTest () {
         new FramesPage(driver).returnListOfFrames();
+       // Assert.assertTrue(new FramesPage(driver).isFramePresent().contains("page"));
     }
 
     @Test
     public void switchToFrameByIndex() {
         new FramesPage(driver).switchToFrameByIndexTest(1);
+       // Assert.assertTrue(new FramesPage(driver).isIndexOfFramePresent().contains("page"));
 
     }
 
     @Test
     public void switchToFrameByIdTest() {
         new FramesPage(driver).switchToFrameById();
-        Assert.assertTrue(new FramesPage(driver).switchToFrameById().contains("This"));
+        Assert.assertTrue(new FramesPage(driver).isTextFramePresent().contains("This"));
 
     }
 }

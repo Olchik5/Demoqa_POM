@@ -44,6 +44,15 @@ public class HomePage extends  BasePage{
         clickWithJSExecutor(widgets,0,300);
         return new SidePanelPage(driver);
     }
+
+
+    @FindBy (xpath = "//*[@class='category-cards']/*[2]")
+    WebElement forms;
+
+    public SidePanelPage selectForms() {
+        clickWithJSExecutor(forms,0,300);
+        return new SidePanelPage(driver);
+    }
 }
 
 // xpath //*[text()='Book Store Application']
