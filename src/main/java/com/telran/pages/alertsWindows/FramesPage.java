@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.Collection;
 import java.util.List;
 
 public class FramesPage extends BasePage {
@@ -32,7 +31,7 @@ public class FramesPage extends BasePage {
 
     public FramesPage switchToFrameByIndexTest(int index) {
         driver.switchTo().frame(index);
-       // body.getText();
+        body.getText();
         System.out.println(body.toString());
         return this;
     }
@@ -69,7 +68,7 @@ public class FramesPage extends BasePage {
     }
 
     public String isIndexOfFramePresent() {
-        driver.switchTo().frame(1);
+        driver.switchTo().frame(frame2);
         return body.getText();
     }
 }
