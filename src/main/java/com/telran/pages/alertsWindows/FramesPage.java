@@ -31,8 +31,9 @@ public class FramesPage extends BasePage {
 
     public FramesPage switchToFrameByIndexTest(int index) {
         driver.switchTo().frame(index);
-        body.getText();
-        System.out.println(body.toString());
+        String text = body.getText();
+        System.out.println(text);
+
         return this;
     }
 
@@ -50,12 +51,9 @@ public class FramesPage extends BasePage {
         return this;
     }
 
-    @FindBy (tagName = "body")
-    WebElement body1;
-
     public String isTextFramePresent() {
         driver.switchTo().frame(frame1);
-        return body1.getText();
+        return body.getText();
 
     }
 
@@ -67,8 +65,11 @@ public class FramesPage extends BasePage {
         return body.getText();
     }
 
-    public String isIndexOfFramePresent() {
-        driver.switchTo().frame(frame2);
+    public String isFrameByIndexPresent() {
+        String text = body.getText();
+        System.out.println(text);
         return body.getText();
+
     }
+
 }
