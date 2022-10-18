@@ -1,6 +1,7 @@
 package com.telran.tests;
 
 import com.telran.pages.BasePage;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
@@ -46,4 +47,6 @@ public class TestBase {
             new BasePage(driver).takeScreenshot();
         }
     }
+
+
 }
