@@ -26,7 +26,7 @@ public class FramesTests extends TestBase {
     @Test
     public void switchToFrameByIndex() {
         new FramesPage(driver).switchToFrameByIndexTest(1);
-        Assert.assertTrue(new FramesPage(driver).isIndexOfFramePresent().contains("page"));
+       Assert.assertTrue(new FramesPage(driver).isFrameByIndexPresent().contains("page"));
 
     }
 
