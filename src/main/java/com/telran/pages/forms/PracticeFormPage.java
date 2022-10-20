@@ -1,11 +1,12 @@
 package com.telran.pages.forms;
 
 import com.telran.pages.BasePage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.Collection;
 
 public class PracticeFormPage extends BasePage {
 
@@ -110,15 +111,15 @@ public class PracticeFormPage extends BasePage {
 
     }
 
-    @FindBy (xpath = "//*[text()='Select City']")
-    WebElement selectCity;
-
-    public PracticeFormPage enterCity(String city) {
-        clickWithJSExecutor(selectCity,0,600);
-        driver.findElement(By.xpath(String.format("//div[text()='%s']", city))).click();
-        return this;
-
-    }
+//    @FindBy (xpath = "//*[text()='Select City']")
+//    WebElement selectCity;
+//
+//    public PracticeFormPage enterCity(String city) {
+//        clickWithJSExecutor(selectCity,0,600);
+//        driver.findElement(By.xpath(String.format("//div[text()='%s']", city))).click();
+//        return this;
+//
+//    }
 
 
     @FindBy (id = "firstName")
@@ -143,5 +144,69 @@ public class PracticeFormPage extends BasePage {
        type(userNumber, telNum);
        typeWithExecutor(currentAddress, address, 0, 300);
        return this;
+    }
+
+    public PracticeFormPage hideIframes() {
+        hideAdd();
+        hideFooter();
+        return this;
+    }
+
+    @FindBy (id = "city")
+    WebElement idCity;
+
+    @FindBy (id = "react-select-4-input")
+    WebElement city;
+
+    public PracticeFormPage enterCity(String c) {
+        click(idCity);
+        city.sendKeys(c);
+        city.sendKeys(Keys.ENTER);
+        return this;
+    }
+
+    @FindBy(id = "submit")
+    WebElement submit;
+
+    public PracticeFormPage submit() {
+        clickWithRectangle(submit,2,3);
+        return this;
+    }
+
+
+    @FindBy(id = "example-modal-sizes-title-lg")
+    WebElement title;
+
+    public String getModalTitle() {
+        return title.getText();
+    }
+
+    @FindBy(id = "closeLargeModal")
+    WebElement close;
+
+    public PracticeFormPage closeModalDialog() {
+        closeBanner();
+        clickWithJSExecutor(close,0,700);
+        return this;
+    }
+
+    @FindBy (css = ".react-datepicker__month-select")
+    WebElement month;
+
+    @FindBy(css = ".react-datepicker__year-select")
+    WebElement year;
+
+    public PracticeFormPage chooseDate(String m, String y, String day) {
+        click(dateOfBirthInput);
+        //HTML <select> tag
+        Select select =new Select(month);
+        select.selectByVisibleText(m);
+
+        Select select1 = new Select(year);
+        select1.selectByVisibleText(y);
+
+        driver.findElement(By.xpath("//div[@class='react-datepicker__week']//div[.='" + day + "']")).click();
+
+        return this;
     }
 }
