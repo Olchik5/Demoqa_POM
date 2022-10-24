@@ -137,12 +137,12 @@ public class PracticeFormPage extends BasePage {
     @FindBy (id = "currentAddress")
     WebElement currentAddress;
 
-    public PracticeFormPage enterPersonalData(String firstName, String lastName, String email, String telNum, String address) {
+    public PracticeFormPage enterPersonalData(String firstName, String lastName, String email, String phone) {
        type(enterFirstName,firstName);
        type(enterLastName,lastName);
        type(userEmail, email);
-       type(userNumber, telNum);
-       typeWithExecutor(currentAddress, address, 0, 300);
+       type(userNumber, phone);
+       //typeWithExecutor(currentAddress, address, 0, 300);
        return this;
     }
 
@@ -207,6 +207,11 @@ public class PracticeFormPage extends BasePage {
 
         driver.findElement(By.xpath("//div[@class='react-datepicker__week']//div[.='" + day + "']")).click();
 
+        return this;
+    }
+
+    public PracticeFormPage addAddress(String address) {
+        typeWithExecutor(currentAddress, address, 0, 300);
         return this;
     }
 }
