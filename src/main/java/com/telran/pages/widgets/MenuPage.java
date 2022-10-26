@@ -26,9 +26,9 @@ public class MenuPage extends BasePage {
         actions.moveToElement(mainItem2).perform();
         //mouse hover menu 'SUB SUB LIST'
         actions.moveToElement(suSubList).perform();
-
+        //mouse hover menu options 'Sub Sub Item 2'
         actions.moveToElement(suSubItem2).perform();
-        //click(suSubItem2);
+        //System.out.println(suSubItem2.getText());
         return this;
     }
 }
