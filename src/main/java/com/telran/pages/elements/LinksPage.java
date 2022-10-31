@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
@@ -42,18 +43,29 @@ public class LinksPage extends BasePage {
 
     private void verifyLinks(String linkUrl) {
         try {
-        URL url = new URL(linkUrl);
-        HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
-        httpURLConnect.setConnectTimeout(3000);
-        httpURLConnect.connect();
+            URL url = new URL(linkUrl);
+            HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+            httpURLConnect.setConnectTimeout(3000);
+            httpURLConnect.connect();
 
-        if (httpURLConnect.getResponseCode() >= 400) {
-            System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage() + "is a broken link");
-        } else {
-            System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
-        }
+            if (httpURLConnect.getResponseCode() >= 400) {
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage() + "is a broken link");
+            } else {
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
+            }
         } catch (Exception e) {
             System.out.println(linkUrl + " - " + "is a broken link");
         }
+    }
+
+    @FindBy(id = "moved")
+    WebElement moved;
+
+    @FindBy(id = "linkResponse")
+    WebElement linkResponse;
+
+    public String getTextMoved() {
+        clickWithJSExecutor(moved, 0, 400);
+        return linkResponse.getText();
     }
 }

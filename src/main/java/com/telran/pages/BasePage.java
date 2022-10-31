@@ -74,6 +74,17 @@ public class BasePage {
         return screenshot.getAbsolutePath();
     }
 
+    public void takeScreenshotMyListener(String pathToFile) {
+        File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File(pathToFile);
+        try {
+            Files.copy(tmp,screenshot);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
     public void hideFooter() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.querySelector('footer').style.display='none'");
