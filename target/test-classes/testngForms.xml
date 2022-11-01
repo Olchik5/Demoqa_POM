@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Forms" verbose="1" >
+    <test name="Forms" >
+        <classes>
+            <class name="com.telran.tests.elements.TextBoxTests">
+                <methods>
+                    <exclude name="keyBoardEventTest"> </exclude>
+                </methods>
+            </class>
+            <class name="com.telran.tests.forms.PracticeFormTests" />
+        </classes>
+    </test>
+
+</suite>

@@ -1,111 +1,389 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-01T10:31:04 CET" name="User" finished-at="2022-11-01T10:31:20 CET" duration-ms="16177">
+  <suite started-at="2022-11-01T14:19:34 CET" name="Forms" finished-at="2022-11-01T14:20:42 CET" duration-ms="67376">
     <groups>
     </groups>
-    <test started-at="2022-11-01T10:31:04 CET" name="User" finished-at="2022-11-01T10:31:20 CET" duration-ms="16177">
-      <class name="com.telran.tests.bookstore.LoginTests">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:04 CET" name="init" finished-at="2022-11-01T10:31:10 CET" duration-ms="6357" status="PASS">
+    <test started-at="2022-11-01T14:19:34 CET" name="Forms" finished-at="2022-11-01T14:20:42 CET" duration-ms="67376">
+      <class name="com.telran.tests.elements.TextBoxTests">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:34 CET" name="init" finished-at="2022-11-01T14:19:41 CET" duration-ms="6361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:10 CET" name="startTest" finished-at="2022-11-01T10:31:10 CET" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:41 CET" name="startTest" finished-at="2022-11-01T14:19:41 CET" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.telran.tests.bookstore.LoginTests.LoginPositiveParametersTest(java.lang.String,java.lang.String)]]>
+                <![CDATA[public void com.telran.tests.elements.TextBoxTests.textBoxTestWithDataProviderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@2c16fadb]]>
+                <![CDATA[[Ljava.lang.Object;@2de9ca6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="ensurePrecondition()[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:10 CET" name="ensurePrecondition" finished-at="2022-11-01T10:31:10 CET" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="ensurePreconditions()[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:41 CET" name="ensurePreconditions" finished-at="2022-11-01T14:19:41 CET" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ensurePrecondition -->
-        <test-method signature="LoginPositiveParametersTest(java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:10 CET" name="LoginPositiveParametersTest" finished-at="2022-11-01T10:31:12 CET" duration-ms="1104" status="PASS">
+        </test-method> <!-- ensurePreconditions -->
+        <test-method signature="textBoxTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:41 CET" name="textBoxTestWithDataProviderTest" data-provider="addTextBoxForm" finished-at="2022-11-01T14:19:42 CET" duration-ms="1308" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[newproject@gmail.com]]>
+                <![CDATA[Ola La]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[123456Rt!]]>
+                <![CDATA[ol@la.la]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Hamburg]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Berlin]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginPositiveParametersTest -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:12 CET" name="logOut" finished-at="2022-11-01T10:31:12 CET" duration-ms="129" status="PASS">
+        </test-method> <!-- textBoxTestWithDataProviderTest -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:42 CET" name="init" finished-at="2022-11-01T14:19:50 CET" duration-ms="7703" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:12 CET" name="stopTest" finished-at="2022-11-01T10:31:12 CET" duration-ms="1" status="PASS">
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:42 CET" name="stopTest" finished-at="2022-11-01T14:19:42 CET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginPositiveParametersTest status=SUCCESS method=LoginTests.LoginPositiveParametersTest(java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085] output={null}]]]>
+                <![CDATA[[TestResult name=textBoxTestWithDataProviderTest status=SUCCESS method=TextBoxTests.textBoxTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:12 CET" name="init" finished-at="2022-11-01T10:31:19 CET" duration-ms="6872" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:19 CET" name="startTest" finished-at="2022-11-01T10:31:19 CET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:50 CET" name="startTest" finished-at="2022-11-01T14:19:50 CET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.telran.tests.bookstore.LoginTests.LoginPositiveTest()]]>
+                <![CDATA[public void com.telran.tests.elements.TextBoxTests.textBoxTestWithDataProviderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@3c7cfcbb]]>
+                <![CDATA[[Ljava.lang.Object;@59018eed]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="ensurePrecondition()[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:19 CET" name="ensurePrecondition" finished-at="2022-11-01T10:31:19 CET" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="ensurePreconditions()[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:50 CET" name="ensurePreconditions" finished-at="2022-11-01T14:19:50 CET" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ensurePrecondition -->
-        <test-method signature="LoginPositiveTest()[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:19 CET" name="LoginPositiveTest" finished-at="2022-11-01T10:31:20 CET" duration-ms="945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPositiveTest -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:20 CET" name="logOut" finished-at="2022-11-01T10:31:20 CET" duration-ms="73" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085]" started-at="2022-11-01T10:31:20 CET" name="stopTest" finished-at="2022-11-01T10:31:20 CET" duration-ms="1" status="PASS">
+        </test-method> <!-- ensurePreconditions -->
+        <test-method signature="textBoxTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:50 CET" name="textBoxTestWithDataProviderTest" data-provider="addTextBoxForm" finished-at="2022-11-01T14:19:52 CET" duration-ms="1167" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginPositiveTest status=SUCCESS method=LoginTests.LoginPositiveTest()[pri:0, instance:com.telran.tests.bookstore.LoginTests@402c4085] output={null}]]]>
+                <![CDATA[Tra La]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[la@la.la]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kiel]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hanover]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textBoxTestWithDataProviderTest -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:52 CET" name="init" finished-at="2022-11-01T14:19:57 CET" duration-ms="5426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:52 CET" name="stopTest" finished-at="2022-11-01T14:19:52 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=textBoxTestWithDataProviderTest status=SUCCESS method=TextBoxTests.textBoxTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopTest -->
-      </class> <!-- com.telran.tests.bookstore.LoginTests -->
-    </test> <!-- User -->
-  </suite> <!-- User -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:57 CET" name="startTest" finished-at="2022-11-01T14:19:57 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.telran.tests.elements.TextBoxTests.textBoxTestWithDataProviderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2ee39e73]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="ensurePreconditions()[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:57 CET" name="ensurePreconditions" finished-at="2022-11-01T14:19:57 CET" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensurePreconditions -->
+        <test-method signature="textBoxTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:57 CET" name="textBoxTestWithDataProviderTest" data-provider="addTextBoxForm" finished-at="2022-11-01T14:19:58 CET" duration-ms="889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tro Lo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lo@lo.lo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pizzo]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Orte]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textBoxTestWithDataProviderTest -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6]" started-at="2022-11-01T14:19:58 CET" name="stopTest" finished-at="2022-11-01T14:19:58 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=textBoxTestWithDataProviderTest status=SUCCESS method=TextBoxTests.textBoxTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.elements.TextBoxTests@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTest -->
+      </class> <!-- com.telran.tests.elements.TextBoxTests -->
+      <class name="com.telran.tests.forms.PracticeFormTests">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:19:58 CET" name="init" finished-at="2022-11-01T14:20:04 CET" duration-ms="5474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:04 CET" name="startTest" finished-at="2022-11-01T14:20:04 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.telran.tests.forms.PracticeFormTests.createNewStudentTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@76973a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="ensurePrecondition()[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:04 CET" name="ensurePrecondition" finished-at="2022-11-01T14:20:04 CET" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensurePrecondition -->
+        <test-method signature="createNewStudentTest()[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:04 CET" name="createNewStudentTest" finished-at="2022-11-01T14:20:11 CET" duration-ms="6886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewStudentTest -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:11 CET" name="init" finished-at="2022-11-01T14:20:20 CET" duration-ms="9230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:11 CET" name="stopTest" finished-at="2022-11-01T14:20:11 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewStudentTest status=SUCCESS method=PracticeFormTests.createNewStudentTest()[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTest -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:20 CET" name="startTest" finished-at="2022-11-01T14:20:20 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.telran.tests.forms.PracticeFormTests.createNewStudentTestWithDataProviderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@71a4f441]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="ensurePrecondition()[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:20 CET" name="ensurePrecondition" finished-at="2022-11-01T14:20:21 CET" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensurePrecondition -->
+        <test-method signature="createNewStudentTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:21 CET" name="createNewStudentTestWithDataProviderTest" data-provider="usingFile" finished-at="2022-11-01T14:20:28 CET" duration-ms="7404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bob]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Green]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bob@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567891]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[10 May 1990]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[C:/Tools/imagesStudent.jfif]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Boston]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewStudentTestWithDataProviderTest -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:28 CET" name="init" finished-at="2022-11-01T14:20:34 CET" duration-ms="6194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:28 CET" name="stopTest" finished-at="2022-11-01T14:20:28 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewStudentTestWithDataProviderTest status=SUCCESS method=PracticeFormTests.createNewStudentTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTest -->
+        <test-method is-config="true" signature="ensurePrecondition()[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:34 CET" name="ensurePrecondition" finished-at="2022-11-01T14:20:35 CET" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensurePrecondition -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:34 CET" name="startTest" finished-at="2022-11-01T14:20:34 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.telran.tests.forms.PracticeFormTests.createNewStudentTestWithDataProviderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@24876a7e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="createNewStudentTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:35 CET" name="createNewStudentTestWithDataProviderTest" data-provider="usingFile" finished-at="2022-11-01T14:20:42 CET" duration-ms="7207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lisa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Braum]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lis@maol.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567892]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12 May 1992]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[C:/Tools/imagesStudent.jfif]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Boston]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewStudentTestWithDataProviderTest -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175]" started-at="2022-11-01T14:20:42 CET" name="stopTest" finished-at="2022-11-01T14:20:42 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewStudentTestWithDataProviderTest status=SUCCESS method=PracticeFormTests.createNewStudentTestWithDataProviderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.forms.PracticeFormTests@4681c175] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTest -->
+      </class> <!-- com.telran.tests.forms.PracticeFormTests -->
+    </test> <!-- Forms -->
+  </suite> <!-- Forms -->
 </testng-results>
